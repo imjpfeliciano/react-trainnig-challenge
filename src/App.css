@@ -28,6 +28,17 @@
   color: #61dafb;
 }
 
+.footerStyle{
+  height: 50px;
+  background-color: rgb(241 87 34 / 97%);
+  padding: 2rem;
+  text-align: center;
+}
+
+.container {
+  text-align: center;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
