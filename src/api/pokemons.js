@@ -80,4 +80,3 @@ export const pokemons = [
         "url": "https://pokeapi.co/api/v2/pokemon/20/"
     }
 ];
-
