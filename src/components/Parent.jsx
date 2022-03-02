@@ -1,6 +1,7 @@
 import { useState, createContext } from "react";
 import { ParentStyled, CounterStyled, CounterBox } from "./Components.styled";
 import Child1 from "./Child1";
+import { Link } from "react-router-dom";
 
 const initialState = {
     count: 0,
@@ -37,6 +38,8 @@ const Parent = () => {
                 <button onClick={() => setCount(count + 1)}>
                     Add
                 </button>
+
+                <Link to={"/"}>Regresar a home</Link>
             </CounterStyled>
         </CounterProvider> 
     )
