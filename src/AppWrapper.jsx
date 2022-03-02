@@ -1,5 +1,6 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useContext } from 'react';
 import AppContainer from './AppContainer.styled';
+import { CounterContext } from './components/Parent';
 
 const formatText = (text) => text.toUpperCase();
 /*
@@ -22,6 +23,7 @@ const AppWrapper = () => {
     // logica
     // const [page, setPage] = useState('pokemon-list');
     const [type, setType] = useState('');
+    const {count} = useContext(CounterContext)
     // const [state, setState] = useState({
     //     type: '',
     //     color: '',
@@ -50,6 +52,7 @@ const AppWrapper = () => {
     return (
         <AppContainer type={type}>
             <div>
+                <div>{count}</div>
                 {formatText(`type: ${type}`)}
             </div>
             

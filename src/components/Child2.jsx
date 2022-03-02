@@ -1,10 +1,16 @@
 import Child3 from "./Child3";
-import { Child2Wrapper } from "./Components.styled"
+import { useContext } from "react";
+import { Child2Wrapper, CounterBox } from "./Components.styled"
+import { CounterContext } from "./Parent";
 
 const Child2 = () => {
+    const { count, text, onDecrement } = useContext(CounterContext);
+
     return (
         <Child2Wrapper>
             <Child3 />
+            <CounterBox>{count} - {text}</CounterBox>
+            <button onClick={onDecrement}>decrement</button>
         </Child2Wrapper>
     )
 };
