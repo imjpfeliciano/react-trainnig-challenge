@@ -4,6 +4,9 @@ export const CounterStyled = styled.div`
     width: max-content;
     margin: 0 auto;
     font-weight: bold;
+    text-align: center;
+    vertical-align: baseline;
+    position: relative;
 `;
 
 export const ParentStyled = styled.div`
@@ -11,7 +14,7 @@ export const ParentStyled = styled.div`
     height: 500px;
     background-color: blue;
     margin: 2rem auto;
-    display: flex;
+    /* display: flex; */
     color: white;
 `;
 
@@ -37,4 +40,9 @@ export const Child4Wrapper = styled.div`
     width: 100px;
     height: 100px;
     background-color: red;
+`;
+
+export const CounterBox = styled.h1`
+    position: absolute;
+    padding-left: 1rem;
 `;

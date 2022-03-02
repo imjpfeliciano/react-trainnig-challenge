@@ -18,15 +18,15 @@ RESETEA_ESTADO = { type: '', color: '' }
 
 
 
-const AppWrapper = ({ text }) => {
+const AppWrapper = () => {
     // logica
-    const [page, setPage] = useState('pokemon-list');
+    // const [page, setPage] = useState('pokemon-list');
     const [type, setType] = useState('');
-    const [state, setState] = useState({
-        type: '',
-        color: '',
-        // ...
-    })
+    // const [state, setState] = useState({
+    //     type: '',
+    //     color: '',
+    //     // ...
+    // })
 
     // con arreglo de dependencias vacio -> durante la carga inicial
     // useEffect(() => {
@@ -49,7 +49,9 @@ const AppWrapper = ({ text }) => {
     // render
     return (
         <AppContainer type={type}>
-            {formatText(text)}
+            <div>
+                {formatText(`type: ${type}`)}
+            </div>
             
             <input
                 type="text"

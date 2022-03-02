@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { ParentStyled, CounterStyled } from "./Components.styled";
+import { ParentStyled, CounterStyled, CounterBox } from "./Components.styled";
 import Child1 from "./Child1";
 
 const Parent = () => {
@@ -9,7 +9,9 @@ const Parent = () => {
         <CounterStyled>
             <ParentStyled>
                 <Child1 />
-                {count}
+                <CounterBox>
+                    {count}
+                </CounterBox>
             </ParentStyled>
             <div>
                 {count}

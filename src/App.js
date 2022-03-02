@@ -4,7 +4,7 @@ import Parent from './components/Parent';
 function App() {
   return (
     <div>
-      <AppWrapper text="Hello world!" />
+      <AppWrapper />
       <Parent />
     </div>
   );
