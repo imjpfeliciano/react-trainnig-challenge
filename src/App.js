@@ -1,8 +1,12 @@
 import AppWrapper from './AppWrapper';
+import Parent from './components/Parent';
 
 function App() {
   return (
-    <AppWrapper text="Hello world!" />
+    <div>
+      <AppWrapper text="Hello world!" />
+      <Parent />
+    </div>
   );
 }
 
