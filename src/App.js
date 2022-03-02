@@ -12,12 +12,8 @@ export function App() {
   return (
     <Fragment>
       <Header/>
-      <ContentView>
-        
-      </ContentView>
-      <Footer>        
-      </Footer>
-      
+      <ContentView/>      
+      <Footer/>    
     </Fragment>
   )
 }
